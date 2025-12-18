@@ -4,7 +4,7 @@
   "profile": "data-package",
   "resources": [
     {
-      "description": "Dados dos procedimentos obstétricos realizados por unidade FHEMIG a partir de 2025.",
+      "description": "Dados dos procedimentos obstétricos realizados por unidade FHEMIG dividios por tipo de procedimento.",
       "dialect": {
         "delimiter": ";"
       },
@@ -32,14 +32,19 @@
             "description": "Mês de referência."
           },
           {
-            "name": "procedimentos_obstetricos",
+            "name": "tipo_procedimento",
+            "type": "integer",
+            "description": "Tipo de procedimento obstétrico realizado."
+          },
+          {
+            "name": "qtde_procedimentos",
             "type": "integer",
             "description": "Apresenta o número total de cirurgias ginecológicas e partos (normal e cesárea) realizados no Bloco Obstétrico."
           }
         ]
       },
       "scheme": "file",
-      "title": "Procedimentos obstétricos a partir de 2025"
+      "title": "Procedimentos obstétricos por unidade FHEMIG."
     }
   ],
   "title": "Procedimentos Obstétricos"
